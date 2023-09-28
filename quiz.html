@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <meta name="description" content="Quiz page">
+    <meta name="author" content="Bruno Souza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Quiz | Bruno Souza | WDD 130</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Quiz form</h1>
+    </header>
+    <main>
+        <form action="/index.html">
+            <fieldset>
+                <legend>CSS Quiz</legend>
+                <div class="area">
+                    <label for="q1">What does CSS mean?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="area">
+                    <label for="q2">When and where CSS was created</label>
+                    <textarea name="q2" id="q2" cols="30" rows="10"></textarea>
+                </div>
+                <div class="area">
+                <label for="q3">How we declare a variable with CSS?</label>
+                    <select name="q3" id="q3">
+                        <option value="-" selected disabled>.</option>
+                        <option value="-">Append two hyphens (–) as the prefix</option>
+                        <option value=".">Append two dots (..) as the prefix</option>
+                        <option value="*">Append two asterisks (**) as the prefix</option>
+                    </select>
+                </div>
+                <div class="area">
+                    <label for="q4">How many CSS selectors we have?</label>
+                    <input type="number" id="q4" name="q4">
+                </div>
+                <button type="submit">Submit Quiz</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

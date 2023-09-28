@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+nav{
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    padding: 0.5rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h1{
+    color: steelblue;
+    text-align: center;
+    border-bottom: 3px solid steelblue;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    margin: 3px;
+    padding: 2px;
+    box-shadow: 0 0 30px #333;
+}
+
+p{
+    padding: 0.5rem;
+}
+
+main{
+    max-width: 850px;
+    margin: 1rem;
+}
+
+aside{
+    position: relative;
+    width: 11.7rem;
+    align-items: center;
+    align-content: center;
+}
+footer{
+    margin-top: 1em;
+    text-align: center;
+    border-top: black 2px solid;
+}
+
+/* Class Selectors */
+
+.box{
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 0.2rem;
+    background-color: #eee;
+    color: black;
+    clear: right;
+
+}
+
+main img{
+    float: right;
+}
+
+aside h2{
+    position: absolute;
+    top: 18px;
+    left: 23px;
+    color: white;
+}
+
+header, .grid, footer{
+    max-width: 840px;
+
+    
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}

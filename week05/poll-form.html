@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/poll-form.css">
+    <meta name="description" content="My page for the BYU web developer course">
+    <meta name="author" content="Bruno Souza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Bruno Souza | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="">What is your favorite browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="edge">Edge</option>
+                        <option value="safari">Safari</option>
+                        <option value="brave">Brave</option>
+                        <option value="brave">Brave</option>
+                        <option value="brave">Brave</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea name="feedback" id="feedback" rows="4" placeholder="Manaus/AM, São José/SC, Rio de janeiro/RJ, Fortaleza/CE">></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer> ©️2023 | HTML Form - User Poll | Bruno Souza </footer>
+</body>
+</html>

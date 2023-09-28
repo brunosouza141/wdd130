@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+:root{
+    --primary-color:#081C15;
+    --secondary-color:#2D6A4F;
+    --accent1-color:#D8F3DC;
+    --accent2-color:#52B788;
+    --heading-font:'Poppins', sans-serif;
+    --paragraph-font:'Montserrat', sans-serif;
+    --nav-background-color:#1B4332;
+    --nav-link-color: #74C69D;
+    --nav-hover-link-color: #B7E4C7;
+    --nav-hover-background-color: #40916C;
+}
+
+body{
+    font-family: var(--default-font);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header{
+    background-color: var(--accent1-color);
+    padding: 20px;
+}
+
+p{
+    padding: 25px;
+}
+
+nav{
+    background-color: var(--nav-background-color);
+    padding: 20px;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+nav a{ 
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link nav a:visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
