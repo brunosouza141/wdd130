@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
 :root{
-    --primary-color:#081C15;
-    --secondary-color:#2D6A4F;
-    --accent1-color:#D8F3DC;
-    --accent2-color:#52B788;
+    --primary-color:#264653;
+    --secondary-color:#2fbbab;
+    --accent1-color:#E9C46A;
+    --accent2-color:#F4A261;
     --heading-font:'Poppins', sans-serif;
     --paragraph-font:'Montserrat', sans-serif;
     --nav-background-color:#1B4332;
-    --nav-link-color: #74C69D;
-    --nav-hover-link-color: #B7E4C7;
+    --nav-link-color: #E76F51;
+    --nav-hover-link-color: #c96248;
     --nav-hover-background-color: #40916C;
+}
+
+#content{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    background-color: azure;
+}
+
+#background {
+    background-color: var(--nav-link-color);
+    height: 725px;
 }
 
 body{
@@ -29,6 +41,7 @@ nav a:not(.sociallinks a){
     color: var(--primary-color);
     text-decoration: none;
     padding: 1rem;
+    text-align: center;
 }
 
 h1{
@@ -44,7 +57,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 header{
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
     padding: 20px;
     display: grid;
     grid-template-columns: 250px 80%;
@@ -84,13 +97,22 @@ p{
 
 
 footer{
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    height: 50px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--secondary-color);
 }
 
+footer p {
+    font-size: 1.2em;
+}    
+
+footer p a:hover{
+    text-decoration: underline;
+}
 .sociallinks img{
     width: 25px;
     height: auto;
@@ -391,5 +413,11 @@ footer{
 }
 
 .icon{
-    max-width: 100px;
+    width: 100px;
+}
+
+.msg{
+    background-color: var(--secondary-color);
+    margin: 30px;
+    padding: 10px;
 }
