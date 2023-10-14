@@ -5,7 +5,7 @@
     --secondary-color:#2fbbab;
     --accent1-color:#E9C46A;
     --accent2-color:#F4A261;
-    --paragraph-font:'Poppins', sans-serif;
+    /* --paragraph-font:'Poppins', sans-serif; */
     --paragraph-font:'Montserrat', sans-serif;
     --nav-background-color:#1B4332;
     --nav-link-color: #E76F51;
@@ -454,4 +454,13 @@ msg p{
 
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
+}
+
+.book{
+    font-size: 18px;
+    font-family: var(--paragraph-font) ;
+    border-radius: 6px;
+    background-color: var(--accent2-color);
+    padding: 15px 30px;
+    margin-top: 50px;
 }
