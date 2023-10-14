@@ -6,6 +6,7 @@
 
 body{
     width: 100%;
+    margin: 0 auto;
 }
 
 nav{
@@ -94,4 +95,13 @@ header, .grid, footer{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    background-color: steelblue;
+    color: white;
+}
+
+footer p {
+    padding: 25px;
 }
