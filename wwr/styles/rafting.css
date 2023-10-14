@@ -12,7 +12,9 @@
     --nav-hover-link-color: #c96248;
     --nav-hover-background-color: #40916C;
 }
-
+main, section, img{
+    box-sizing: border-box;
+}
 #content{
     text-align: center;
     margin: 0 auto;
@@ -28,7 +30,8 @@
 body{
     font-family: var(--default-font);
     max-width: 100%;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 nav:not(.sociallinks){
     display: flex;
@@ -40,7 +43,7 @@ nav a:not(.sociallinks a){
     display: block;
     color: var(--primary-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 35px;
     text-align: center;
 }
 
@@ -61,6 +64,10 @@ header{
     display: grid;
     grid-template-columns: 250px 80%;
     align-items: center;
+}
+
+header img{
+    padding-top: 5px;
 }
 
 .hero{
@@ -96,7 +103,8 @@ p{
 
 
 footer{
-    padding: 10px;
+    margin-top: 200px;
+    padding: 25px 50px;
     height: 50px;
     margin: 0 auto;
     display: flex;
@@ -117,6 +125,7 @@ footer p a:hover{
 .sociallinks img{
     width: 25px;
     height: auto;
+    padding-top: 15px;
 }
 
 .sociallinks{
@@ -340,6 +349,8 @@ footer p a:hover{
     color: var(--primary-color);
     justify-content: center;
     display: flex;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .images_index figure{
@@ -411,6 +422,7 @@ footer p a:hover{
 
 .card-img, .happy_trip{
     width: 700px;
+    border: 10px solid black;
 }
 
 .icon{
@@ -420,7 +432,23 @@ footer p a:hover{
 .msg{
     background-color: var(--secondary-color);
     margin: 30px;
-    padding: 10px;
     font-family: var(--paragraph-font);
     color: var(--primary-color);
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+msg a{
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+msg p{
+    padding-bottom: 15px;
+}
+
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
 }
