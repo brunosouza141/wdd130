@@ -444,6 +444,7 @@ msg a{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    background-color: var(--accent2-color);
 }
 
 msg p{
