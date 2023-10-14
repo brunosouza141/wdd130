@@ -46,6 +46,7 @@ nav a:not(.sociallinks a){
     padding: 35px;
     text-align: center;
     background-color:var(--accent2-color) ;
+    border-radius: 10px;
 }
 
 /* h1{
