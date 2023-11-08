@@ -1,0 +1,47 @@
+.menor{
+    color: aqua;
+}
+
+.text{
+    text-align: center;
+    align-items: center;
+}
+
+.content{
+    max-width: 300px;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: blue;
+    height: 60px;
+}
+.block::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    padding-top: 3px;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    align-items: center;
+  }
+
+  .ext::after{
+    left: -10px;
+  }
+.block{
+    position: relative;
+    color: white;
+}
+
+.maior{
+    padding: 20px;
+}
