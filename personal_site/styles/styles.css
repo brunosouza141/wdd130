@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
+:root{
+    --primary-color:#396E94;
+    --secondary-color:#274690;
+    --accent1-color:#576CA8;
+    --accent2-color:#F5F3F5;
+    /* --paragraph-font:'Poppins', sans-serif; */
+    --paragraph-font:'Montserrat', sans-serif;
+    --nav-background-color:#1B4332;
+    --nav-link-color: #E76F51;
+    --nav-hover-link-color: #c96248;
+    --nav-hover-background-color: #40916C;
+}
+main, section, img{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: var(--default-font);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav:not(.sociallinks){
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a:not(.sociallinks a){ 
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    background-color:var(--accent2-color) ;
+    border-radius: 10px;
+    align-items: center;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    background-color: var(--primary-color) ;
+}
+
+header img{
+    padding: 10px;
+    
+}
+/* h1{
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    top: 0;
+} */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+
+
+footer{
+    margin-top: 200px;
+    padding: 25px 50px;
+    height: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    bottom: 0;
+    position: fixed;
+}
+
+footer p, a {
+    font-size: 1.2em;
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+}    
+
+footer p a:hover{
+    text-decoration: underline;
+    color: var(--accent2-color);
+}
+.sociallinks img{
+    width: 25px;
+    height: auto;
+}
+
+.sociallinks{
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.linkedin{
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+
+@media screen and (max-width: 900px) {
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+}
