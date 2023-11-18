@@ -9,6 +9,7 @@
     <title>Rafting co. Whitewater</title>
 </head>
 <body>
+    <div id="feedback"></div>
     <div id="content">
         <header>
             <img src="images/logo.png" alt="Logo">
@@ -28,7 +29,7 @@
                     <p>Number: +55 48 98826-5345</p>
                 </div>
                 <div class="form">
-                    <form action="/index.html">
+                    <form action="">
                         <h2>Reach us out</h2>
                         <div class="opt">
                             <label for="name">Name:</label>
@@ -57,7 +58,7 @@
                             <label for="newsletter">Please subscribe me to the monthly newsletter</label>
                             <input type="checkbox" name="newsletter" id="newsletter">
                         </div>
-                        <button type="submit">Send</button>
+                        <button type="submit" class="feedback">Send</button>
                     </form>
                 </div>
             </div>
@@ -98,5 +99,22 @@
         </nav>
     </footer>
 </div>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello ' + formElement.name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
 </body>
 </html>
