@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins&display=swap');
 :root{
-    --primary-color:#396E94;
-    --secondary-color:#274690;
-    --accent1-color:#576CA8;
-    --accent2-color:#F5F3F5;
+    --primary-color: #1B264F   ;
+    --secondary-color: #274690 ;
+    --tertiary-color: #576CA8;
+    --accent1-color: #302B27;
+    --accent2-color: #F5F3F5;
     /* --paragraph-font:'Poppins', sans-serif; */
-    --paragraph-font:'Montserrat', sans-serif;
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto Mono', monospace;
     --nav-background-color:#1B4332;
     --nav-link-color: #E76F51;
     --nav-hover-link-color: #c96248;
@@ -61,6 +63,7 @@ header img{
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--paragraph-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 
@@ -117,3 +120,36 @@ footer p a:hover{
         padding: 15px;
     }
 }
+
+.homepage_content{
+    margin-bottom: 100px;
+}
+
+.block1, .block2{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.block1 img, .block2 img{
+    width: 500px;
+}
+
+.paragraph{
+    text-align: center;
+    padding: 0 20% 0 20%;
+    font-size: 1.2rem;
+    font-family: var(--paragraph-font);
+}
+
+h2{
+    text-align: center;
+    color: black;
+    font-weight:bold;
+    font-family: var(--paragraph-font);
+}
+
