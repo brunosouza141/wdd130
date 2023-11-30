@@ -122,10 +122,12 @@ footer p a:hover{
 }
 
 .homepage_content{
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 100px;
 }
 
-.block1, .block2{
+.block{
     width: 60%;
     margin: 0 auto;
     display: grid;
@@ -133,6 +135,7 @@ footer p a:hover{
     margin-top: 20px;
     border: 5px solid black;
     padding: 10px;
+    text-align: center ;
 }
 
 .block1 img, .block2 img{
@@ -142,7 +145,7 @@ footer p a:hover{
 .paragraph{
     text-align: center;
     padding: 0 20% 0 20%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--paragraph-font);
 }
 
@@ -153,3 +156,46 @@ h2{
     font-family: var(--paragraph-font);
 }
 
+
+.container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    display: flex;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
