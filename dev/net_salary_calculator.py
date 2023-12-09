@@ -1,9 +1,19 @@
+## L13 Prove: Assignment ##
+#Developer: Bruno Souza
+#Course: CSE 111 - Programing with functions
+
+
 import csv
 from datetime import datetime
 import time
 import pandas as pd
 
+
+
 def main():
+    #Parameters: None
+    #Gets inputs and print user interations
+    #Return: None
     print('Welcome to the brazilian net calculator!')
     time.sleep(1)
     name = str(input("How you want to be called? "))
@@ -59,15 +69,24 @@ def main():
         else:
             print('Thank you for using the brazilian net calculator!!')
 def save_history_file(history_input):
+    #Parameters: The list of all date to be inserted to the csv file
+    #Write the current calculation into the history file.
+    #Return: None
     with open('history.csv', mode='a', newline='') as csv_file:
                 writer= csv.writer(csv_file)
                 writer.writerow(history_input)
 
 def show_history(name):
+    #Parameters: Name
+    #read the csv and returns the data frame filtered by name.
+    #Return: A dataframe
     df = pd.read_csv('history.csv')
     user_history = df[(df['Name'] == name)]
     return user_history
 def inss(gross_salary):
+    #Parameters: Gross salary
+    #Calculate the INSS discount based on the gross salary
+    #Return: discounted salary
     if gross_salary <= 1320.00:
         deduction = gross_salary * 0.075
     elif gross_salary <= 2571.29:
@@ -83,6 +102,9 @@ def inss(gross_salary):
 
 
 def irrf(gross_salary, num_dependents, alimony):
+    #Parameters: Gross salary, numbers of dependents and alimony of every month
+    #Calculate the IRRF discount based on the gross salary
+    #Return: discounted salary
     # INSS deduction
     inss_deduction = inss(gross_salary)
 
@@ -103,4 +125,5 @@ def irrf(gross_salary, num_dependents, alimony):
 
     return irrf_deduction if irrf_deduction > 0 else 0
 
-main()
+if __name__ == "__main__":
+    main()
