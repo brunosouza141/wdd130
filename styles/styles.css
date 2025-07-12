@@ -1,7 +1,13 @@
+/* https://coolors.co/2660a4-edf7f6-f19953-c47335-56351e */
 :root{
     --padding: 10px;
     --box-shadow: 0 0 30px gray;
     --margin: 1rem;
+    --lapis-lazuli: #2660a4ff;
+    --azure-web: #edf7f6ff;
+    --sandy-brown: #f19953ff;
+    --copper: #c47335ff;
+    --caf-noir: #56351eff;
 }
 
 nav {
