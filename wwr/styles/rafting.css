@@ -26,6 +26,37 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.5s ease;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+header a:hover {
+    color: var(--accent3-color);
+    background-color: var(--accent2-color);
+    transition: all 0.5s ease;
+}
+
+header {
+    display: grid;
+    grid-template: 1fr / 30% 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent3-color);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    justify-self: center;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -42,6 +73,8 @@ nav, p , section, article{
 
 .hero{
     position: relative;
+    border: 5px var(--accent1-color) solid;
+    margin: 16px;
 }
 
 .hero img{
@@ -49,6 +82,51 @@ nav, p , section, article{
     width: 100%;
     height: auto;
 }
+
+.history-grid{
+    display: grid;
+    grid-template: 1fr / 2fr 1fr 2fr;
+    align-items: center;
+    text-align: center;
+}
+
+.history-grid img {
+    max-width: 200px;
+}
+
+.adventure-grid{
+    display:grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+.adventure-grid img{
+    max-width: 120px;
+    justify-self: center;
+    align-self: center;
+}
+
+.adventure-grid figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.adventure-grid figcaption{
+    font-size: 0.6rem;
+    justify-self: center;
+    align-self: center;
+}
+
+section{
+    border: 5px var(--accent1-color) solid;
+}
+
+section h2{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 27px;
+}
+
 
 h1{
     position: absolute;
@@ -80,4 +158,29 @@ h1{
     height: auto;
     clear: both;
     margin: 16px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-grid p{
+    justify-self: center;
+    grid-column: 2/5;
+}
+
+.footer-grid nav{
+    display: flex;
+    justify-content:center;
+    align-content: baseline;
+    grid-column: 5/6;
+    border-bottom: 5px var(--accent1-color) solid;
+}
+.footer-grid img{
+    max-width: 40px;
+    padding: 3px;
 }
