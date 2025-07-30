@@ -261,6 +261,10 @@ fieldset{
     padding: 2px;
 }
 
+.contactus{
+    background-color: var(--accent3-color);
+}
+
 .contactus form{
     background-color: var(--accent3-color);
 }
