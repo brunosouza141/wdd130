@@ -165,7 +165,6 @@ h1{
     grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    
 }
 
 .footer-grid p{
@@ -183,4 +182,118 @@ h1{
 .footer-grid img{
     max-width: 40px;
     padding: 3px;
+}
+
+.footer-grid a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.information strong{
+    padding-right: 3px;
+}
+
+.map iframe{
+    max-width: 280px;
+    height: auto;
+}
+
+.company-information{
+    padding: 5px;
+}
+
+.contactus{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    border: 1px solid var(--secondary-color);
+    border-radius: 9px;
+    padding: 10px;
+}
+
+.company-information, .happy-customers, .message-form{
+    padding: 10px;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+.form-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.happy-customers img {
+    width: 130px;
+}
+
+.happy-customers figcaption{
+    font-size: 10px;
+}
+
+.happy-customers figure{
+    padding-bottom: 4rem;
+}
+
+
+legend{
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-family: var(--heading-font);
+}
+
+label{
+    text-align: left;
+    padding: 0.6rem;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+}
+
+fieldset{
+    padding: 2px;
+}
+
+.contactus form{
+    background-color: var(--accent3-color);
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+}
+
+
+form h2 {
+    border-top: 1px solid var(--primary-color);
+}
+
+input, select, textarea{
+    padding: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.button{
+    display: flex;
+    padding: 2px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.button button {
+    margin: 0.5rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 0.9rem;
+    justify-self: center;
 }
