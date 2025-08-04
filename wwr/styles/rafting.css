@@ -294,7 +294,7 @@ input, select, textarea{
 
 .button button {
     margin: 0.5rem;
-    background-color: var(--secondary-color);
+    background-color: #194981;
     color: #fff;
     border: none;
     border-radius: .5rem;
