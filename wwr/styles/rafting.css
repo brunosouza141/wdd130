@@ -307,3 +307,144 @@ input, select, textarea{
     text-align: center;
     padding: 10px;
 }
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.trip-details figure{
+    display: flex;
+    padding: 10px;
+}
+
+.trip-details img{
+    min-width: 200px;
+}
+
+.available-trips td, .available-trips tr, .available-trips th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.table-header{
+    font-size: 1.2rem;
+}
+
+.available-trips{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.available-trips a {
+    text-decoration: none;
+    margin: 1rem;
+    background-color: #194981;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    justify-self: flex-end;
+    max-width: 150px;
+    text-align: center;
+}
+
+.available-trips a:hover {
+    background-color: #123864;
+    transition: all 0.5s ease;
+}
+
+.home-hero{
+    position: relative;
+    border: 5px var(--accent1-color) solid;
+    margin: 26px;
+}
+
+.home-hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-hero h1{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+
+.grid-item{
+    padding: 20px;
+    margin: 0;
+}
+
+.home-button button {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--accent3-color);
+    transition: all 0.5s ease;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.home-button button:hover {
+    color: var(--accent3-color);
+    background-color: var(--accent2-color);
+    transition: all 0.5s ease;
+}
+
+.purpose{
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/3;
+}
+
+.purpose img{
+    max-width: 200px;
+}
+
+.purpose figure{
+    display: flex;
+    max-height: 150px;
+}
+
+.home-grid .trips{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-grid .trips a{
+    text-decoration: none;
+    margin: 1rem;
+    background-color: #194981;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    justify-self: center;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+
+.home-grid .trips a:hover {
+    background-color: #123864;
+    transition: all 0.5s ease;
+}
